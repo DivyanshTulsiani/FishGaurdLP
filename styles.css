@@ -138,16 +138,17 @@ main {
 }
 
 .mainheading {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 0.4rem;
   letter-spacing: -0.5px;
   color: #dedede;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 .innerheading{
+  font-size: 3rem;
   background: linear-gradient(to right, #fff, #0081ff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
