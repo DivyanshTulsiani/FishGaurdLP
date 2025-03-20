@@ -137,7 +137,7 @@ main {
   margin-bottom: 40px;
 }
 
-h1 {
+.mainheading {
   font-size: 48px;
   font-weight: 800;
   line-height: 1.2;
@@ -145,6 +145,14 @@ h1 {
   letter-spacing: -0.5px;
   color: #dedede;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.innerheading{
+  background: linear-gradient(to right, #fff, #0081ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .subtitle {
