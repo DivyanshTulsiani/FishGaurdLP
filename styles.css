@@ -76,6 +76,16 @@ header {
   color: white;
   box-shadow: 0 0 15px 5px rgba(145, 71, 255, 0.5);
 }
+.logo-img {
+  width: 3.6rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2.5px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.logo-img:hover {
+  border-color: #ffffff;
+}
 
 nav ul {
   display: flex;
