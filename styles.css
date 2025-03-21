@@ -320,6 +320,12 @@ footer {
   justify-content: space-between;
 }
 
+.workflow2{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 .workflow1content{
   margin-left: 15rem;
 }
@@ -341,11 +347,23 @@ footer {
   /* padding-left: rem;
   padding-right: 5rem; */
 }
+
+.content2{
+  margin-top: 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-left: 7rem;
+  padding-right: 7 rem;
+  /* padding-left: 1rem;
+  padding-right: 2rem; */
+  /* padding-left: rem;
+  padding-right: 5rem; */
+}
 .cont .card {
   position: relative;
   max-width: 300px;
   height: 215px;
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 30px 10px;
   padding: 20px 15px;
 
@@ -354,7 +372,8 @@ footer {
   /* background: linear-gradient(to right, #fff, #0081ff);
   background: linear-gradient(black, #07427d) padding-box, 
               linear-gradient(#ffffff, #0081ff, 75%, transparent 100%) border-box; */
-  box-shadow: 0 5px 20px #9333ea;
+  /* box-shadow: 0 5px 20px #9333ea; */
+  box-shadow: 0 5px 20px rgba(147, 51, 234, 1);
   transition: 0.3s ease-in-out;
   border-radius: 15px;
 }
