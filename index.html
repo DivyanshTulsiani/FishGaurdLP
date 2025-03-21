@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href="#">Curriculum</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="#" id="price" onclick="addPrice()">Pricing</a></li>
                 <li><a href="#">Testimonials</a></li>
             </ul>
         </nav>
@@ -43,7 +43,7 @@
 
         <div class="buttons1">
             <button class="cta-primary"> <span class="chromeicon"><i class="fa-brands fa-chrome"></i> </span>Download<span class="arrow">→</span></button>
-            <button class="cta-secondary"><span class="icon">✦</span> Read the testimonials</button>
+            <button class="cta-secondary" id="scrollButton"><span class="icon">✦</span> Learn More</button>
         </div>
 
         <div class="endinglogo">
@@ -56,7 +56,7 @@
         </div>
 
           <div class="workflow">
-                <div class="workflow1">
+                <div class="workflow1" >
                     <div class="workflow1img">
                          <div class="cont">
       <div class="card">
@@ -67,17 +67,15 @@
           />
         </div>  
         <div class="content1">
-          <!-- <h3>This is content</h3> -->
+          <h3>URL ANALYSIS</h3>
           <p>
-            <!-- DIn publishing and graphic design, Lorem ipsum is a placeholder text
-            commonly used to demonstrate the visual form of a document or a
-            typeface without relying on meaningful content. -->
+            The email in the image is a classic example of a phishing attempt. Real-time phishing detection systems can help prevent users from falling for such scams by analyzing different elements of the email in real time.
           </p>
         </div>
       </div>
     </div>
                     </div>
-                    <div class="workflow1content">
+                    <div class="workflow1content" id="workflow1start" >
                         <div class="contentheading">
                             1. Real Time URL Analysis
                         </div>
@@ -105,11 +103,15 @@
                                 />
                               </div>  
                               <div class="content1">
-                                <!-- <h3>This is content</h3> -->
+                                <h3>Live Detection Stats:</h3>
                                 <p>
-                                  <!-- DIn publishing and graphic design, Lorem ipsum is a placeholder text
-                                  commonly used to demonstrate the visual form of a document or a
-                                  typeface without relying on meaningful content. -->
+                                
+
+Phishing Links Detected: 6
+
+Suspicious Jobs Identified: 0
+
+Malicious Jobs Flagged: 0
                                 </p>
                               </div>
                             </div>
@@ -126,8 +128,34 @@
 
                 </div>
                 <div class="workflow3">
-    
-                </div>
+                        <div class="workflow1img">
+                             <div class="cont">
+          <div class="card">
+            <div class="image">
+              <img
+                href="#"
+                src="./icons/workflow3.jpg"
+              />
+            </div>  
+            <div class="content1">
+              <h3>Phishing detection for Linkedin</h3>
+              <p>
+                The image shows a LinkedIn phishing attempt, where an attacker impersonates a recruiter or company representative to trick users into clicking a malicious link. 
+              </p>
+            </div>
+          </div>
+        </div>
+                        </div>
+                        <div class="workflow1content">
+                            <div class="contentheading">
+                                1. Real Time URL Analysis
+                            </div>
+                            <div class="content">
+                                FishGuard employs real-time URL analysis to instantly detect phishing links. Leveraging advanced algorithms, the platform analyzes characteristics of URLs to assess their legitimacy and alerts users before they can be harmed.
+                            </div>
+                        </div>
+                    </div>
+            
           </div>
     </main>
     <div class="tag">
@@ -144,5 +172,6 @@
     </footer>
 
     <script src="stars.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

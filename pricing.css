@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-header h1 {
+    color: #4f46e5;
+    font-weight: 800;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666;
+}
+
+.pricing-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.plan {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 40%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+    color: #4f46e5;
+}
+
+.price1 {
+    font-size: 24px;
+    font-weight: bold;
+    color:gray;
+}
+.price2{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+
+.price span {
+    font-size: 14px;
+    color: #666;
+}
+
+.description {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 14px;
+    color: #444;
+    padding: 5px 0;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #4f46e5;
+    color: #4f46e5;
+}
+
+.btn:hover {
+    background: #4f46e5;
+    color: white;
+}
+
+.enterprise {
+    background: #333;
+    color: white;
+}
+
+.enterprise h3 {
+    color: #7c3aed;
+}
+
+.enterprise ul li {
+    color: #ddd;
+}
+
+.enterprise-btn {
+    background: #7c3aed;
+    color: white;
+    border: none;
+}
+
+.enterprise-btn:hover {
+    background: #6d28d9;
+}

@@ -71,6 +71,7 @@ header {
 .input-container {
   position: relative;
   display: inline-block;
+  
 }
 
 .input-container input {
@@ -82,6 +83,7 @@ header {
   outline: none;
   font-size: 16px;
   border-radius: 9999px;
+  box-shadow: 0 0 15px 5px rgba(145, 71, 255, 0.5);
 }
 
 .input-container .check-icon {
@@ -226,6 +228,12 @@ main {
 .imghero1{
   width: 20rem;
   height: auto;
+}
+.workflow3 {
+  margin-top: 5rem;
+    display: flex
+;
+    justify-content: space-between;
 }
 
 
