@@ -57,6 +57,62 @@ header {
   align-items: center;
   padding: 30px 50px;
 }
+.tag{
+  margin-top: 1.6rem;;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.butn{
+  margin-top: 1.6rem;
+}
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-container input {
+  padding-right: 40px; 
+  padding-left: 30px; 
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 9999px;
+}
+
+.input-container .check-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: green;
+  font-size: 18px;
+ 
+}
+
+.input-container .btn {
+  border-radius: 9999px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:#3d096a;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.input-container .btn:hover {
+  background-color: #3d096a;
+}
+
+
 
 .logo {
   display: flex;
