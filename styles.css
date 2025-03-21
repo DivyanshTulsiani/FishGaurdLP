@@ -306,3 +306,37 @@ footer {
       flex-direction: column;
   }
 }
+.workflow{
+  margin-top: 10rem;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.workflow1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.workflow1content{
+  margin-left: 19rem;
+}
+
+.contentheading{
+  font-size: 3rem;
+  font-weight: bold;
+  /* padding-left: 2rem;
+  padding-right: 2rem;   */
+}
+
+.content{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  /* padding-left: rem;
+  padding-right: 5rem; */
+}
