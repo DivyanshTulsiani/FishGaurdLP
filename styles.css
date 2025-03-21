@@ -321,22 +321,23 @@ footer {
 }
 
 .workflow1content{
-  margin-left: 19rem;
+  margin-left: 15rem;
 }
 
 .contentheading{
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 700;
   /* padding-left: 2rem;
   padding-right: 2rem;   */
 }
 
 .content{
-  margin-top: 2rem;
-  font-size: 1.5rem;
+  margin-top: 1.8rem;
+  font-size: 1.1rem;
   font-weight: 400;
   padding-left: 1rem;
-  padding-right: 2rem;
+  /* padding-left: 1rem;
+  padding-right: 2rem; */
   /* padding-left: rem;
   padding-right: 5rem; */
 }
@@ -350,7 +351,10 @@ footer {
 
   display: flex;
   flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  /* background: linear-gradient(to right, #fff, #0081ff);
+  background: linear-gradient(black, #07427d) padding-box, 
+              linear-gradient(#ffffff, #0081ff, 75%, transparent 100%) border-box; */
+  box-shadow: 0 5px 20px #9333ea;
   transition: 0.3s ease-in-out;
   border-radius: 15px;
 }
@@ -395,3 +399,5 @@ footer {
 .image {
   border-radius: 1rem;
 }
+
+
