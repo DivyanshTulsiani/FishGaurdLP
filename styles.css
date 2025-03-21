@@ -57,7 +57,7 @@ header {
   align-items: center;
   padding: 30px 50px;
 }
-.tag{
+/* .tag{
   margin-top: 1.6rem;;
   width: 100vw;
   display: flex;
@@ -109,11 +109,117 @@ header {
   cursor: pointer;
   font-size: 14px;
 }
+.input-container .btn1 {
+  border-radius: 9999px;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:#3d096a;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
 
 .input-container .btn:hover {
   background-color: #3d096a;
+} */
+
+
+.tag {
+  margin-top: 1.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.input-container {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+}
+
+.input-container input {
+  width: 100%;
+  padding-right: 80px;
+  padding-left: 10px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 9999px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 0 15px 5px rgba(145, 71, 255, 0.5);
+}
+
+.input-container .btn {
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3d096a;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.input-container .btn1 {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3d096a;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.input-container .btn:hover,
+.input-container .btn1:hover {
+  background-color: #5a0d99;
+}
+
+/* Notification styles */
+#notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.notification {
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.notification.success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.notification.error {
+  background-color: #F44336;
+  color: white;
+}
+
+.notification.info {
+  background-color: #2196F3;
+  color: white;
+}
 
 
 .logo {
@@ -417,7 +523,7 @@ footer {
   font-size: 1.1rem;
   font-weight: 400;
   padding-left: 7rem;
-  padding-right: 7 rem;
+  padding-right: 7rem;
   /* padding-left: 1rem;
   padding-right: 2rem; */
   /* padding-left: rem;
@@ -483,4 +589,18 @@ footer {
   border-radius: 1rem;
 }
 
+.inputurldes{
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #fff, #0081ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 
+}
+.inputurldesmore{
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #a0a0a0;
+}
