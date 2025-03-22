@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="pricing.css">
 </head>
 <body>
+    <!-- Star field container -->
+    <div class="stars"></div>
+    
     <div class="container">
         <div class="pricing-header">
-            <h1>PRICING</h1>
+            <h1>BUY OUR SERVICE</h1>
             <p class="title">Choose the right plan for you</p>
-            <p class="subtitle">Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
+            <p class="subtitle">Choose an affordable plan that's packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
         </div>
         <div class="pricing-grid">
             <div class="plan">
@@ -19,28 +22,75 @@
                 <p class="price1">$2<span>/month</span></p>
                 <p class="description">The perfect plan if you're just getting started with our product.</p>
                 <ul>
-                    <li>✔ 25 products</li>
-                    <li>✔ Up to 10,000 subscribers</li>
-                    <li>✔ Advanced analytics</li>
-                    <li>✔ 24-hour support response time</li>
+                    <li></li>
+                    <li>✔ Unlimited Access</li>
+                    <li></li>
+                    <li>✔ Unlimited subscribers</li>
+                    <li></li>
+                    <!-- <li>✔ Advanced analytics</li> -->
+                    <!-- <li>✔ Dedicated support representative</li> -->
+                    <li>✔ Marketing automations</li>
+                    <li></li>
+                    <li>✔ Custom integrations</li>
+                    <li></li>
                 </ul>
-                <a href="#" class="btn">Get started today</a>
+                <a href="#" class="btn">Buy @ $2</a>
             </div>
             <div class="plan enterprise">
                 <h3>6 month plan</h3>
-                <p class="price2">$1<span>/month</span></p>
+                <p class="price2">$1.5<span>/month</span></p>
                 <p class="description">Dedicated support and infrastructure for your company.</p>
                 <ul>
-                    <li>✔ Unlimited products</li>
+                    <li>✔ Unlimited Access</li>
                     <li>✔ Unlimited subscribers</li>
                     <li>✔ Advanced analytics</li>
                     <li>✔ Dedicated support representative</li>
                     <li>✔ Marketing automations</li>
                     <li>✔ Custom integrations</li>
                 </ul>
-                <a href="#" class="btn enterprise-btn">Get started today</a>
+                <a href="#" class="btn enterprise-btn">Buy @ $6</a>
             </div>
         </div>
     </div>
+
+    <script>
+        // Function to create the star field
+        function createStarField() {
+            const stars = document.querySelector('.stars');
+            
+            // Clear any existing content
+            stars.innerHTML = '';
+            
+            // Number of stars to create
+            const starCount = 100;
+            
+            // Create stars
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                
+                // Random position
+                star.style.left = ⁠ ${Math.random() * 100}% ⁠;
+                star.style.top = ⁠ ${Math.random() * 100}% ⁠;
+                
+                // Random size (1-3px)
+                const size = (Math.random() * 2) + 1;
+                star.style.width = ⁠ ${size}px ⁠;
+                star.style.height = ⁠ ${size}px ⁠;
+                
+                // Random animation delay
+                star.style.animationDelay = ⁠ ${Math.random() * 5}s ⁠;
+                
+                // Add to stars container
+                stars.appendChild(star);
+            }
+        }
+        
+        // Call the function when page loads
+        document.addEventListener('DOMContentLoaded', createStarField);
+        
+        // Optional: Recreate stars on window resize
+        window.addEventListener('resize', createStarField);
+    </script>
 </body>
 </html>

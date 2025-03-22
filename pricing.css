@@ -1,124 +1,217 @@
-body {
-    font-family: Arial, sans-serif;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #0a0e17;
+    color: #e5e7eb;
+    line-height: 1.5;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  /* Star Field Styles */
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .star {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: twinkle 5s infinite ease-in-out;
+  }
+  
+  @keyframes twinkle {
+    0% { opacity: 0.2; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.2; }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Header Styles */
+  .pricing-header {
     text-align: center;
-}
-
-.container {
-    max-width: 900px;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
+    margin-bottom: 4rem;
+  }
+  
+  .pricing-header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6d28d9;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(109, 40, 217, 0.5);
+  }
+  
+  .pricing-header .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #8b5cf6, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .pricing-header .subtitle {
+    font-size: 1.125rem;
+    color: #9ca3af;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Pricing Grid */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Plan Card */
+  .plan {
+    background-color: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.pricing-header h1 {
-    color: #4f46e5;
-    font-weight: 800;
-}
-
-.title {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.subtitle {
-    font-size: 16px;
-    color: #666;
-}
-
-.pricing-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.plan {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    width: 40%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.plan h3 {
-    color: #4f46e5;
-}
-
-.price1 {
-    font-size: 24px;
-    font-weight: bold;
-    color:gray;
-}
-.price2{
-    font-size: 20px;
-    font-weight: bold;
-    color:white;
-}
-
-.price span {
-    font-size: 14px;
-    color: #666;
-}
-
-.description {
-    color: #666;
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-ul {
+    padding: 2rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(139, 92, 246, 0.5);
+  }
+  
+  .plan h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #e5e7eb;
+  }
+  
+  .price1, .price2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #f9fafb;
+  }
+  
+  .price1 span, .price2 span {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+  
+  .description {
+    color: #9ca3af;
+    margin-bottom: 1.5rem;
+  }
+  
+  .plan ul {
     list-style: none;
-    padding: 0;
-}
-
-ul li {
-    font-size: 14px;
-    color: #444;
-    padding: 5px 0;
-}
-
-.btn {
+    margin-bottom: 2rem;
+  }
+  
+  .plan li {
+    padding: 0.5rem 0;
+    /* margin: 20px; */
+    color: #d1d5db;
+  }
+  
+  .btn {
     display: block;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f9fafb;
     text-decoration: none;
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    border: 1px solid #4f46e5;
-    color: #4f46e5;
-}
-
-.btn:hover {
-    background: #4f46e5;
-    color: white;
-}
-
-.enterprise {
-    background: #333;
-    color: white;
-}
-
-.enterprise h3 {
-    color: #7c3aed;
-}
-
-.enterprise ul li {
-    color: #ddd;
-}
-
-.enterprise-btn {
-    background: #7c3aed;
-    color: white;
-    border: none;
-}
-
-.enterprise-btn:hover {
-    background: #6d28d9;
-}
+    border-radius: 6px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+  }
+  
+  /* Enterprise Plan Styling */
+  .enterprise {
+    background: linear-gradient(135deg, rgba(91, 33, 182, 0.6), rgba(67, 56, 202, 0.6));
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .enterprise::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, rgba(30, 41, 59, 0) 70%);
+    animation: rotate 20s linear infinite;
+    z-index: -1;
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .enterprise h3,
+  .enterprise .price2,
+  .enterprise .description,
+  .enterprise li {
+    color: #f9fafb;
+  }
+  
+  .enterprise .price2 span {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .enterprise-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #f9fafb;
+  }
+  
+  .enterprise-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .pricing-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .pricing-header .title {
+      font-size: 2rem;
+    }
+  }

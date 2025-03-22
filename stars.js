@@ -23,7 +23,7 @@ function createStarField() {
     star.style.height = `${size}px`;
     
     // Random animation delay
-    star.style.animationDelay = `${Math.random() * 5}s`;
+    star.style.animationDelay = `${Math.random() * 1}s`;
     
     // Add to stars container
     stars.appendChild(star);

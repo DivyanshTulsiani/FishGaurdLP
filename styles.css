@@ -140,13 +140,13 @@ header {
 .input-container {
   position: relative;
   display: inline-block;
-  width: 300px;
+  width: 300px; /* Fixed width for better control */
 }
 
 .input-container input {
   width: 100%;
-  padding-right: 80px;
-  padding-left: 10px;
+  padding-right: 80px; /* More space for buttons */
+  padding-left: 30px; /* Space for check icon */
   height: 40px;
   border: 2px solid #ccc;
   border-radius: 9999px;
@@ -155,9 +155,19 @@ header {
   box-shadow: 0 0 15px 5px rgba(145, 71, 255, 0.5);
 }
 
+.input-container .check-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: green;
+  font-size: 16px;
+  pointer-events: none; /* So it doesn't interfere with input */
+}
+
 .input-container .btn {
   position: absolute;
-  right: 45px;
+  right: 80px; /* Position for first button */
   top: 50%;
   transform: translateY(-50%);
   background-color: #3d096a;
@@ -167,11 +177,12 @@ header {
   padding: 5px 10px;
   cursor: pointer;
   font-size: 14px;
+  z-index: 2; /* Ensure buttons are clickable */
 }
 
 .input-container .btn1 {
   position: absolute;
-  right: 5px;
+  right: 5px; /* Position for second button */
   top: 50%;
   transform: translateY(-50%);
   background-color: #3d096a;
@@ -181,44 +192,12 @@ header {
   padding: 5px 10px;
   cursor: pointer;
   font-size: 14px;
+  z-index: 2; /* Ensure buttons are clickable */
 }
 
 .input-container .btn:hover,
 .input-container .btn1:hover {
-  background-color: #5a0d99;
-}
-
-/* Notification styles */
-#notification-container {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.notification {
-  padding: 12px 20px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  font-family: Arial, sans-serif;
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-.notification.success {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.notification.error {
-  background-color: #F44336;
-  color: white;
-}
-
-.notification.info {
-  background-color: #2196F3;
-  color: white;
+  background-color: #5a0d99; /* Slightly lighter on hover */
 }
 
 

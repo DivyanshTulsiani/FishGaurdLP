@@ -16,8 +16,8 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Curriculum</a></li>
-                <li><a href="#" id="price" onclick="addPrice()">Pricing</a></li>
+                <li><a href="#">Our Contributors</a></li>
+                <li><a href="pricing.html" id="price" onclick="addPrice()">Pricing</a></li>
                 <li><a href="#">Testimonials</a></li>
             </ul>
         </nav>
@@ -165,11 +165,12 @@ Malicious Jobs Flagged: 0
       Providing Users to tag URL according to their preference 
     </div>
     <div class="tag">
-      <div class="input-container" id="url-form">
-        <input type="text" id="url-input" placeholder="Enter your url">
-        <button class="btn" id="tag-button"><i class="fa-regular fa-circle-check"></i></button>
-        <button class="btn1" id="untag-button"><i class="fa-regular fa-circle-xmark"></i></button>
-      </div>
+      <form class="input-container" id="url-form">
+        <input type="text" id="url-input" placeholder="Enter your URL">
+        <button type="button" class="btn" id="tag-button"><i class="fa-regular fa-circle-check"></i>Tag</button>
+        <button type="button" class="btn1" id="untag-button"><i class="fa-regular fa-circle-xmark"></i> Untag</button>
+      </form>
+      <div id="notification-container"></div>
     </div>
 </div>
 
